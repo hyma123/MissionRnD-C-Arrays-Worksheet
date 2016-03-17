@@ -44,7 +44,8 @@ namespace spec
 
 		TEST_METHOD(differentElements)
 		{
-			int Arr[5] = { 10, 20, 30, 40, 50 }, lessCount, moreCount;
+			int Arr[5] = { 10, 20, 30, 40, 50 };
+			int lessCount, moreCount;
 			studentsCount(Arr, 5, 30, &lessCount, &moreCount);
 			Assert::AreEqual(2, lessCount, L"Score equal to one element case failed.", LINE_INFO());
 			Assert::AreEqual(2, moreCount, L"Score equal to one element case failed.", LINE_INFO());
